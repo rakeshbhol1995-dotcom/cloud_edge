@@ -16,10 +16,10 @@ import {
 } from "lucide-react";
 
 const contactInfo = [
-    { icon: Mail, label: "Email", value: "contact@cloudedge.tech", href: "mailto:contact@cloudedge.tech" },
+    { icon: Mail, label: "Email", value: "rakesh@cloudedge.tech", href: "mailto:rakesh@cloudedge.tech" },
     { icon: Phone, label: "Phone", value: "+91 77900 09355", href: "tel:+917790009355" },
     { icon: MessageCircle, label: "WhatsApp", value: "+91 77900 09355", href: "https://wa.me/917790009355" },
-    { icon: MapPin, label: "Location", value: "Bhubaneswar, Odisha, India" }
+    { icon: MapPin, label: "Location", value: "Palamandap, Cuttack, Odisha, India - 753009" }
 ];
 
 const socialLinks = [

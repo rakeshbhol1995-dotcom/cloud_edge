@@ -14,7 +14,7 @@ const teamMembers = [
             github: "#",
             linkedin: "#",
             twitter: "#",
-            email: "rakesh@example.com"
+            email: "rakesh@cloudedge.tech"
         }
     },
     {
