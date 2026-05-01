@@ -136,22 +136,55 @@ export default function HeroSection() {
 
                             {/* Floating Elements */}
                             <motion.div
-                                animate={{ y: [0, -10, 0] }}
-                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                                className="absolute -top-4 -right-4 px-4 py-2 rounded-xl bg-slate-800/90 border border-slate-700 backdrop-blur-sm"
+                                animate={{ 
+                                    y: [0, -15, 0],
+                                    x: [0, 5, 0],
+                                    rotate: [0, 2, 0]
+                                }}
+                                transition={{ 
+                                    duration: 4, 
+                                    repeat: Infinity, 
+                                    ease: "easeInOut" 
+                                }}
+                                className="absolute -top-6 -right-6 px-5 py-3 rounded-2xl bg-slate-800/90 border border-cyan-500/30 backdrop-blur-md shadow-lg shadow-cyan-500/10 z-20"
                             >
-                                <span className="text-cyan-400 font-bold">5+</span>
-                                <span className="text-slate-400 text-sm ml-1">Years Exp</span>
+                                <div className="flex flex-col items-center">
+                                    <span className="text-cyan-400 font-black text-xl leading-none">5+</span>
+                                    <span className="text-slate-400 text-[10px] uppercase tracking-widest mt-1 font-bold">Years Exp</span>
+                                </div>
                             </motion.div>
 
                             <motion.div
-                                animate={{ y: [0, 10, 0] }}
-                                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
-                                className="absolute -bottom-4 -left-4 px-4 py-2 rounded-xl bg-slate-800/90 border border-slate-700 backdrop-blur-sm"
+                                animate={{ 
+                                    y: [0, 15, 0],
+                                    x: [0, -5, 0],
+                                    rotate: [0, -2, 0]
+                                }}
+                                transition={{ 
+                                    duration: 4, 
+                                    repeat: Infinity, 
+                                    ease: "easeInOut",
+                                    delay: 0.5 
+                                }}
+                                className="absolute -bottom-6 -left-6 px-5 py-3 rounded-2xl bg-slate-800/90 border border-blue-500/30 backdrop-blur-md shadow-lg shadow-blue-500/10 z-20"
                             >
-                                <span className="text-cyan-400 font-bold">100+</span>
-                                <span className="text-slate-400 text-sm ml-1">Projects</span>
+                                <div className="flex flex-col items-center">
+                                    <span className="text-blue-400 font-black text-xl leading-none">50+</span>
+                                    <span className="text-slate-400 text-[10px] uppercase tracking-widest mt-1 font-bold">Projects</span>
+                                </div>
                             </motion.div>
+
+                            {/* Orbiting Particles Animation */}
+                            <div className="absolute inset-[-40px] pointer-events-none">
+                                <motion.div
+                                    animate={{ rotate: 360 }}
+                                    transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                                    className="w-full h-full relative"
+                                >
+                                    <div className="absolute top-0 left-1/2 w-3 h-3 bg-cyan-400 rounded-full blur-[2px] shadow-[0_0_10px_#22d3ee]" />
+                                    <div className="absolute bottom-0 left-1/2 w-2 h-2 bg-blue-400 rounded-full blur-[1px] shadow-[0_0_8px_#3b82f6]" />
+                                </motion.div>
+                            </div>
                         </div>
                     </motion.div>
                 </div>
