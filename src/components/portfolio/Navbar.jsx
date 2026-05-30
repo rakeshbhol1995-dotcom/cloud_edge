@@ -25,7 +25,6 @@ export default function Navbar({ currentView, onNavigate }) {
     // Dynamic nav links based on language
     const navLinks = [
         { label: t('nav.home'), href: "#home" },
-        { label: t('nav.about'), href: "#about" },
         { label: t('nav.services'), href: "#services" },
         { label: t('nav.projects'), href: "#projects" },
         { label: t('nav.nfts'), href: "#nfts" },

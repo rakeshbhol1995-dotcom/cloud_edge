@@ -6,7 +6,6 @@ import Navbar from '@/components/portfolio/Navbar';
 import Dashboard from '@/components/portfolio/Dashboard';
 import ServiceDetail from '@/components/portfolio/ServiceDetail';
 import HeroSection from '@/components/portfolio/HeroSection';
-import AboutSection from '@/components/portfolio/AboutSection';
 import TeamSection from '@/components/portfolio/TeamSection';
 import ServicesSection from '@/components/portfolio/ServicesSection';
 import ProjectsSection from '@/components/portfolio/ProjectsSection';
@@ -60,10 +59,6 @@ function MainContent() {
                     <>
                         <section id="home">
                             <HeroSection />
-                        </section>
-
-                        <section id="about">
-                            <AboutSection />
                         </section>
 
                         {/* Team Profiles */}
